@@ -890,6 +890,7 @@ strong {
 .profilesection {
   z-index: 10;
   display: block;
+  overflow: hidden;
   margin-top: -10%;
   margin-right: auto;
   margin-left: auto;
@@ -918,9 +919,8 @@ strong {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 36px;
-  margin-bottom: 0px;
-  padding-bottom: 40px;
+  margin-top: 200px;
+  margin-bottom: 200px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -1140,7 +1140,7 @@ strong {
 }
 
 .fadeline {
-  width: 60%;
+  width: 80%;
   height: 2px;
   margin-right: auto;
   margin-left: auto;
@@ -1277,7 +1277,7 @@ strong {
   position: relative;
 }
 
-.text-block-4 {
+.quotetext {
   margin-top: -1vh;
   margin-left: 3.4vw;
   color: #41416c;
@@ -1593,6 +1593,7 @@ strong {
   border-color: rgba(237, 55, 103, 0.67);
   border-radius: 20px;
   box-shadow: 0 10px 20px 0 rgba(233, 138, 163, 0.36);
+  opacity: 1;
 }
 
 .projdivtext {
@@ -1627,8 +1628,8 @@ strong {
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(33%, #313159), to(transparent));
   background-image: linear-gradient(180deg, #313159 33%, transparent);
   opacity: 0;
-  -webkit-transition: all 300ms ease;
-  transition: all 300ms ease;
+  -webkit-transition: all 200ms cubic-bezier(.19, 1, .22, 1);
+  transition: all 200ms cubic-bezier(.19, 1, .22, 1);
   text-decoration: none;
   cursor: pointer;
 }
@@ -1771,8 +1772,6 @@ strong {
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(33%, rgba(252, 0, 83, 0.8)), to(transparent));
   background-image: linear-gradient(180deg, rgba(252, 0, 83, 0.8) 33%, transparent);
   opacity: 0;
-  -webkit-transition: all 300ms ease;
-  transition: all 300ms ease;
   cursor: not-allowed;
 }
 
@@ -2022,7 +2021,7 @@ strong {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 90px;
+  margin-top: 100px;
   padding: 30px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -2045,7 +2044,7 @@ strong {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 100px;
+  width: 200px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -2106,7 +2105,7 @@ strong {
   width: 90%;
   margin-right: auto;
   margin-left: auto;
-  padding: 50px 70px;
+  padding: 50px 30px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -2473,18 +2472,17 @@ strong {
 }
 
 .surrealfadeline {
-  width: 80%;
+  width: 60%;
   height: 2px;
   margin: 60px auto;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(237, 55, 103, 0)), color-stop(50%, #043732), to(rgba(237, 55, 103, 0)));
-  background-image: linear-gradient(90deg, rgba(237, 55, 103, 0), #043732 50%, rgba(237, 55, 103, 0));
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(237, 55, 103, 0)), color-stop(50%, #f27b77), to(rgba(237, 55, 103, 0)));
+  background-image: linear-gradient(90deg, rgba(237, 55, 103, 0), #f27b77 50%, rgba(237, 55, 103, 0));
 }
 
 .pictturecontainer {
   max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
-  background-color: #fff;
   -o-object-fit: contain;
   object-fit: contain;
 }
@@ -2784,13 +2782,14 @@ strong {
 .conceptfullwrap {
   margin-right: auto;
   margin-left: auto;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 130px;
+  padding-bottom: 130px;
   background-color: #fffbe0;
 }
 
 .conceptfull {
   margin-right: auto;
+  margin-bottom: 59px;
   margin-left: auto;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -3127,6 +3126,8 @@ strong {
   z-index: 20;
   display: block;
   overflow: hidden;
+  margin-top: 100px;
+  margin-bottom: 100px;
   padding-top: 50px;
   padding-bottom: 40px;
 }
@@ -3186,7 +3187,7 @@ strong {
 .pic {
   position: absolute;
   z-index: 4;
-  height: 100%;
+  height: 90%;
 }
 
 .homebgs {
@@ -5644,7 +5645,7 @@ strong {
 }
 
 .boldred1 {
-  color: #991c21;
+  color: #fc1a3d;
 }
 
 .minimg {
@@ -6012,7 +6013,7 @@ strong {
 
 .graybgimage {
   display: block;
-  width: 85%;
+  width: 90%;
   margin-right: auto;
   margin-bottom: 40px;
   margin-left: auto;
@@ -6042,6 +6043,7 @@ strong {
 }
 
 .whiteimgbg {
+  margin-bottom: 50px;
   border-radius: 10px;
   background-color: #fff;
 }
@@ -6175,6 +6177,35 @@ strong {
   align-items: flex-end;
 }
 
+.paperfadeline {
+  width: 80%;
+  height: 2px;
+  margin: 60px auto;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(237, 55, 103, 0)), color-stop(50%, #c8e481), to(rgba(237, 55, 103, 0)));
+  background-image: linear-gradient(90deg, rgba(237, 55, 103, 0), #c8e481 50%, rgba(237, 55, 103, 0));
+}
+
+.paperpic {
+  margin-top: 130px;
+  margin-bottom: 130px;
+}
+
+.pweekfadeline {
+  width: 80%;
+  height: 2px;
+  margin: 60px auto;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(237, 55, 103, 0)), color-stop(50%, #f54422), to(rgba(237, 55, 103, 0)));
+  background-image: linear-gradient(90deg, rgba(237, 55, 103, 0), #f54422 50%, rgba(237, 55, 103, 0));
+}
+
+.infogfadeline {
+  width: 80%;
+  height: 2px;
+  margin: 60px auto;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(237, 55, 103, 0)), color-stop(50%, #f37677), to(rgba(237, 55, 103, 0)));
+  background-image: linear-gradient(90deg, rgba(237, 55, 103, 0), #f37677 50%, rgba(237, 55, 103, 0));
+}
+
 @media screen and (min-width: 1920px) {
   .nav-cta {
     -webkit-align-self: center;
@@ -6197,7 +6228,7 @@ strong {
   .quote {
     width: 400px;
     margin-top: 5%;
-    margin-left: 36px;
+    margin-left: 10px;
     font-size: 14px;
   }
 
@@ -6481,8 +6512,8 @@ strong {
   }
 
   .thanks {
-    margin-top: 70px;
-    margin-bottom: 58px;
+    margin-top: 75px;
+    margin-bottom: 75px;
   }
 
   .projectblock {
@@ -6549,10 +6580,6 @@ strong {
     font-size: 14px;
   }
 
-  .fadeline {
-    width: 80%;
-  }
-
   .image-22 {
     width: 150px;
   }
@@ -6597,7 +6624,7 @@ strong {
     flex-direction: column;
   }
 
-  .text-block-4 {
+  .quotetext {
     margin-top: -11px;
     margin-left: 50px;
     font-size: 24px;
@@ -6827,7 +6854,7 @@ strong {
 
   .projcotainer {
     max-width: 100%;
-    padding-top: 0%;
+    padding-top: 5%;
     padding-right: 10px;
     padding-left: 10px;
   }
@@ -7005,6 +7032,10 @@ strong {
     column-gap: 10px;
   }
 
+  .surrealfadeline {
+    width: 80%;
+  }
+
   .pictturecontainer {
     padding-right: 10px;
     padding-left: 10px;
@@ -7083,8 +7114,10 @@ strong {
   }
 
   .conceptfullwrap {
-    padding-top: 0px;
-    padding-bottom: 0px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 
   .conceptfull {
@@ -7093,6 +7126,7 @@ strong {
 
   .image-41 {
     width: 90%;
+    margin-top: 30px;
   }
 
   .pageh3 {
@@ -7122,8 +7156,17 @@ strong {
     line-height: 1.2;
   }
 
+  .cbrfadeline {
+    width: 60%;
+  }
+
   .paperbanner {
     height: 25vh;
+  }
+
+  .projbriefwite {
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
 
   .papercircle {
@@ -7236,6 +7279,14 @@ strong {
   .fulldiv {
     background-position: 100% 100%;
     background-attachment: scroll;
+  }
+
+  .ddfadeline {
+    width: 60%;
+  }
+
+  .fmfadeline {
+    width: 60%;
   }
 
   .pwbanner {
@@ -8205,7 +8256,7 @@ strong {
   .bodyparastatic {
     width: auto;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     margin-left: 50px;
     font-size: 16px;
     line-height: 1.2;
@@ -8248,6 +8299,23 @@ strong {
 
   .textholderin.right {
     padding-right: 30px;
+  }
+
+  .paperfadeline {
+    width: 60%;
+  }
+
+  .paperpic {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  .pweekfadeline {
+    width: 60%;
+  }
+
+  .infogfadeline {
+    width: 60%;
   }
 }
 
@@ -8467,10 +8535,6 @@ strong {
     line-height: 1.1;
   }
 
-  .fadeline {
-    width: 80%;
-  }
-
   .image-22 {
     display: none;
   }
@@ -8506,7 +8570,7 @@ strong {
     margin-top: 0px;
   }
 
-  .text-block-4 {
+  .quotetext {
     margin-top: -5px;
     margin-left: 25px;
     font-size: 14px;
@@ -8809,10 +8873,6 @@ strong {
     column-gap: 20px;
   }
 
-  .surrealfadeline {
-    width: 60%;
-  }
-
   .pictturecontainer {
     background-size: auto, 260px;
     background-attachment: scroll, scroll;
@@ -8963,10 +9023,6 @@ strong {
     line-height: 1.1;
   }
 
-  .cbrfadeline {
-    width: 60%;
-  }
-
   .paperbanner {
     height: 150px;
   }
@@ -9088,14 +9144,6 @@ strong {
 
   .fulldiv {
     background-position: 100% 100%;
-  }
-
-  .ddfadeline {
-    width: 60%;
-  }
-
-  .fmfadeline {
-    width: 60%;
   }
 
   .pwbanner {
@@ -9969,11 +10017,6 @@ strong {
     margin-top: 0px;
   }
 
-  .thanks {
-    margin-top: 36px;
-    margin-bottom: 36px;
-  }
-
   .projectblock {
     margin-top: 0px;
   }
@@ -10030,7 +10073,6 @@ strong {
   }
 
   .fadeline {
-    width: 80%;
     margin-bottom: 0px;
   }
 
@@ -10076,7 +10118,7 @@ strong {
     line-height: 1;
   }
 
-  .text-block-4 {
+  .quotetext {
     margin-top: -5px;
     margin-left: 17px;
     font-size: 12px;
@@ -10236,6 +10278,8 @@ strong {
   }
 
   .column {
+    padding-top: 40px;
+    padding-bottom: 40px;
     -ms-grid-rows: auto auto;
     grid-template-rows: auto auto;
   }
@@ -10265,7 +10309,7 @@ strong {
 
   .projdes {
     font-size: 14px;
-    line-height: 1.1;
+    line-height: 1.2;
   }
 
   .projoutlinewrapper {
@@ -10349,10 +10393,6 @@ strong {
     column-gap: 10px;
   }
 
-  .surrealfadeline {
-    width: 200px;
-  }
-
   .pictturecontainer {
     padding-left: 5px;
     background-image: none;
@@ -10371,6 +10411,11 @@ strong {
   .inspirationwrap {
     width: 100%;
     padding: 5px;
+  }
+
+  .sectioncolor {
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
 
   .smallbodypara {
@@ -10434,10 +10479,6 @@ strong {
     line-height: 1;
   }
 
-  .cbrfadeline {
-    width: 200px;
-  }
-
   .paperparallx {
     height: 25vh;
   }
@@ -10471,6 +10512,7 @@ strong {
 
   .pic {
     top: 20px;
+    height: 80%;
   }
 
   .bg {
@@ -10592,14 +10634,6 @@ strong {
     grid-template-columns: 1fr;
     -ms-grid-rows: auto auto auto;
     grid-template-rows: auto auto auto;
-  }
-
-  .ddfadeline {
-    width: 200px;
-  }
-
-  .fmfadeline {
-    width: 200px;
   }
 
   .pwbanner {
@@ -11284,7 +11318,7 @@ strong {
   }
 
   .bodyparastatic {
-    margin: 10px 0px 0px;
+    margin: 10px 0px 15px;
     padding-right: 0px;
     padding-left: 25px;
     font-size: 16px;
