@@ -27,6 +27,11 @@ body {
   font-weight: 400;
 }
 
+img {
+  display: inline-block;
+  max-width: 100%;
+}
+
 strong {
   font-weight: 700;
   text-align: left;
@@ -1158,6 +1163,10 @@ strong {
   background-color: transparent;
 }
 
+.image-22._2 {
+  height: 200px;
+}
+
 .year {
   overflow: hidden;
   font-family: Rubik, sans-serif;
@@ -1593,7 +1602,6 @@ strong {
   border-color: rgba(237, 55, 103, 0.67);
   border-radius: 20px;
   box-shadow: 0 10px 20px 0 rgba(233, 138, 163, 0.36);
-  opacity: 1;
 }
 
 .projdivtext {
@@ -3605,7 +3613,7 @@ strong {
   background-attachment: fixed;
 }
 
-.image-53 {
+.img2 {
   display: block;
   width: 80%;
   margin-right: auto;
@@ -4138,7 +4146,7 @@ strong {
   background-color: #022e47;
 }
 
-.image-54 {
+.img3 {
   display: block;
   width: 700px;
   margin-right: auto;
@@ -4195,7 +4203,7 @@ strong {
   display: flex;
   overflow: hidden;
   width: 1200px;
-  height: 250px;
+  height: 300px;
   margin-right: auto;
   margin-left: auto;
   -webkit-box-pack: center;
@@ -4364,7 +4372,7 @@ strong {
   margin-left: auto;
 }
 
-.image-56 {
+.moimg {
   width: 350px;
 }
 
@@ -4478,7 +4486,7 @@ strong {
   z-index: 20;
   padding-top: 80px;
   padding-bottom: 20%;
-  background-color: #efecee;
+  background-color: #181818;
 }
 
 .uxcotainer {
@@ -5610,7 +5618,7 @@ strong {
   background-color: #991c21;
 }
 
-.div-block-21 {
+.ddhero {
   overflow: hidden;
   width: 60%;
   padding-top: 2%;
@@ -6206,6 +6214,25 @@ strong {
   background-image: linear-gradient(90deg, rgba(237, 55, 103, 0), #f37677 50%, rgba(237, 55, 103, 0));
 }
 
+.animatedicon {
+  width: 80px;
+}
+
+.background-video {
+  width: 100%;
+  height: 100%;
+}
+
+.img1 {
+  width: 100%;
+}
+
+.img4 {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 @media screen and (min-width: 1920px) {
   .nav-cta {
     -webkit-align-self: center;
@@ -6582,6 +6609,10 @@ strong {
 
   .image-22 {
     width: 150px;
+  }
+
+  .image-22._2 {
+    height: 150px;
   }
 
   .year {
@@ -7457,6 +7488,7 @@ strong {
 
   .logointro {
     width: 95%;
+    height: 16vh;
   }
 
   .agdah2 {
@@ -7689,6 +7721,18 @@ strong {
     margin-bottom: 0px;
     margin-left: 10px;
     font-size: 20px;
+  }
+
+  .just-text {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 
   .textwrap {
@@ -8316,6 +8360,10 @@ strong {
 
   .infogfadeline {
     width: 60%;
+  }
+
+  .img4 {
+    width: 40%;
   }
 }
 
@@ -9290,7 +9338,7 @@ strong {
   }
 
   .logointro {
-    height: 20vh;
+    height: 15vh;
   }
 
   .agdatext {
@@ -10758,7 +10806,7 @@ strong {
   }
 
   .logointro {
-    height: 12vh;
+    height: 8vh;
   }
 
   .agdah2 {
@@ -11146,7 +11194,7 @@ strong {
     line-height: 1;
   }
 
-  .div-block-21 {
+  .ddhero {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -11353,6 +11401,10 @@ strong {
 
   .textholderin.right {
     padding-right: 10px;
+  }
+
+  .img4 {
+    width: 60%;
   }
 }
 
